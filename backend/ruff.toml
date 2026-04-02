@@ -1,0 +1,23 @@
+# Ruff configuration
+line-length = 88
+target-version = "py312"
+
+[lint]
+select = ["E4", "E7", "E9", "F", "B", "I", "N", "UP", "PL", "RUF"]
+ignore = ["B008", "F403", "F405", "PLR2004", "B904"]
+fixable = ["ALL"]
+unfixable = []
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[lint.per-file-ignores]
+"__init__.py" = ["F401"]
+"tests/**/*.py" = ["S101"]
+
+[lint.isort]
+known-first-party = ["app"]

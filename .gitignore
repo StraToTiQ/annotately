@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+.npm/
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.db
+*.sqlite
+*.sqlite3
+
+# Build and Outputs
+dist/
+build/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+coverage/
+.eslintcache
+*.tsbuildinfo
+dist-ssr/
+vite.config.ts.timestamp-*
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Misc
+*.log
+/AplicationDescription
+Raport_Koncowy.md
