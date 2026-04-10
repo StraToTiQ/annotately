@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "AnotationBlog",
+  "description": "Add comments to any web page contextually based on text selection.",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/contentScript/content.tsx"]
+    }
+  ],
+  "background": {
+    "service_worker": "src/background/index.ts",
+    "type": "module"
+  },
+  "host_permissions": [
+    "<all_urls>",
+    "http://localhost:8000/*"
+  ],
+  "action": {
+    "default_popup": "index.html"
+  }
+}
